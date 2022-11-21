@@ -1,0 +1,104 @@
+.main-register {
+    width: 100vw;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.tab-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.container-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px 25px;
+
+    @media screen and (max-width: 410px){
+         padding: 10px 0;
+    }
+}
+
+th {
+    background-color: $blue;
+    color: #fff;
+    font-family: $font-title;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+.modal-header {
+    h1 {
+        font-family: $font-title;
+        font-size: 1.4rem;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        color: $blue;
+    }
+}
+
+.modal-content {
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    label {
+        font-family: 'Open Sans', sans-serif;
+        align-self: flex-start;
+    }
+
+    .form-control {
+        border: none;
+        border-bottom: 1px solid $black;
+        width: 100%;
+        padding: 10px 10px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        &:focus {
+            outline: none;
+            border-bottom: 1px solid $blue;
+        }
+    }
+}
+
+.btn-form {
+    width:max-content;
+    text-transform: uppercase;
+    font-family: $font-title;
+    font-weight: 700;
+    font-size: .9rem;
+    color: $black;
+    background-color: $orange-button;
+    padding: 15px 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    
+    &:hover {
+        color:#fff;
+    }
+}

@@ -1,0 +1,16 @@
+.footer {
+    background-color: #404040;    ;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    p {
+        color: #fff;
+        font-family: 'Open Sans', sans-serif;
+    }
+}

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Open+Sans&family=Source+Serif+Pro:wght@400;600;700;900&display=swap');
+
+$blue: #24A1DD;
+$black: #404040;
+$gray: #6F6F6F;
+$font-title: 'Nunito', sans-serif;
+$orange-button: #FFD33D;
+
+@import 'resetconfig';
+@import 'navbar';
+@import 'main-index';
+@import 'footer';
+@import 'main-register';
+@import 'about';
+@import 'contact';

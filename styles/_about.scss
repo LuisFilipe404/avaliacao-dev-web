@@ -1,0 +1,124 @@
+.main-about {
+    width: 100vw;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        width: 70%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-family: 'Open Sans', sans-serif;
+        color: $gray;
+    }
+
+    img {
+        width: 70%;
+        height: auto;
+        border-radius: 0 50px 0 50px;
+        margin-bottom: 40px;
+    }
+}
+
+#title-about {
+    font-family: $font-title;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $blue;
+    text-align: center;
+}
+
+#title-who {
+    font-family: $font-title;
+    font-size: 1.5rem;
+    color: $black;
+    text-align: center;
+}
+
+.btn-advantages {
+    width:max-content;
+    text-transform: uppercase;
+    font-family: $font-title;
+    font-weight: 700;
+    font-size: .9rem;
+    color: $black;
+    background-color: $orange-button;
+    padding: 15px 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;   
+    
+    &:hover {
+        color:#fff;
+    }
+}
+
+.advantages-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    div {
+        width: 100%;
+        border-left: 1px ridge black;
+        border-right: 1px ridge black;
+        border-bottom: 1px ridge black;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    h3 {
+        font-family: 'Open Sans', sans-serif;   
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        background-color: $blue;
+        padding: 5px 100px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .list-advantages {
+        padding: 30px 70px 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 10px;
+        li {
+            list-style:disc;
+        }
+
+    }
+    
+    .btn-advantage {
+        width:max-content;
+        text-transform: uppercase;
+        font-family: $font-title;
+        font-weight: 700;
+        font-size: .9rem;
+        color: $black;
+        background-color: $orange-button;
+        padding: 15px 30px;
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;   
+        margin-bottom: 20px;
+        align-self: center;
+        &:hover {
+            color:#fff;
+        }
+    }
+}

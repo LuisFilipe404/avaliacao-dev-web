@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header class="header-container">
+        
+        <!--Logo-->
+
+        <a href="../pages/index.html">
+            <div class="icon">
+                <div class="icon-img">
+                    <div class="left-icon">
+                        <div class="blue-type-1"></div>
+                        <div class="white-type-1"></div>
+                        <div class="blue-type-1"></div>
+                        <div class="white-type-1"></div>
+                        <div class="blue-type-2"></div>
+                        <div class="white-type-1"></div>
+                        <div class="blue-type-1"></div>
+                        <div class="white-type-1"></div>
+                        <div class="blue-type-1"></div>
+                    </div>
+                    <div class="inter-logo">
+                        F
+                    </div>
+                </div>
+                <div class="icon-txt">
+                    <h1 class="nav-brand">Filipe<br><span class="title-txt-sd">Library</span></h1>
+                </div>
+            </div>
+        </a>
+
+        <!--Navegação-->
+        <div class="menu-responsivo">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <nav class="navbar-nav">
+            <ul>
+                <li><a class="nav-item" href="./index.html">Home</a></li>
+                <li><a class="nav-item" href="./about.html">About Us</a></li>
+                <li><a class="nav-item" href="./register-books.html">Register Books</a></li>
+                <li><a class="nav-item" href="./suggetions.html">Suggetions</a></li>
+                <li class="contact"><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-contact">
+        <h1>Contact Us</h1>
+        <h2>Any question? Just write us a message!</h2>
+        <form class="form-contact">
+            <fieldset>
+                <legend>
+                    Contact Us
+                </legend>
+
+                <div class="name-group">
+                    <div class="form-group-contact">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" required placeholder="first name">
+                    </div>
+                    <div class="form-group-contact">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" required placeholder="last-name">
+                    </div>
+                </div>
+
+                <div class="data-group">
+                    <div class="form-group-contact">
+                        <label for="mail-contact">Mail</label>
+                        <input type="mail" id="mail-contact" required placeholder="mail">
+                    </div>
+                    <div class="form-group-contact">
+                        <label for="phone-contact">Phone</label>
+                        <input type="tel" id="phone-contact" placeholder="phone number" required>
+                    </div>
+                </div>
+
+                <div class="form-group-area">
+                    <label for="text-contact">Message</label>
+                    <textarea id="text-contact" placeholder="message" required cols="30" rows="10"></textarea>
+                </div>
+
+                <button type="submit" onclick='handleAlert()' class="submit-btn">Submit</button>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>© 2022 Filipe Library. All Rights Reserved, Filipe Library from Unifavip</p>        
+    </footer>
+
+    <script src="../scripts/navbar.js"></script>
+    <script src="../scripts/contact.js"></script>
+</body>
+</html>

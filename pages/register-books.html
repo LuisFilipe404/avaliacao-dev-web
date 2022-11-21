@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Register Books</title>
+</head>
+<body>
+    <header class="header-container">
+        
+        <!--Logo-->
+
+        <a href="../pages/index.html">
+            <div class="icon">
+                <div class="icon-img">
+                    <div class="left-icon">
+                        <div class="blue-type-1"></div>
+                        <div class="white-type-1"></div>
+                        <div class="blue-type-1"></div>
+                        <div class="white-type-1"></div>
+                        <div class="blue-type-2"></div>
+                        <div class="white-type-1"></div>
+                        <div class="blue-type-1"></div>
+                        <div class="white-type-1"></div>
+                        <div class="blue-type-1"></div>
+                    </div>
+                    <div class="inter-logo">
+                        F
+                    </div>
+                </div>
+                <div class="icon-txt">
+                    <h1 class="nav-brand">Filipe<br><span class="title-txt-sd">Library</span></h1>
+                </div>
+            </div>
+        </a>
+
+        <!--Navegação-->
+        <div class="menu-responsivo">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <nav class="navbar-nav">
+            <ul>
+                <li><a class="nav-item" href="./index.html">Home</a></li>
+                <li><a class="nav-item" href="./about.html">About Us</a></li>
+                <li><a class="nav-item" href="./register-books.html">Register Books</a></li>
+                <li><a class="nav-item" href="./suggetions.html">Suggetions</a></li>
+                <li class="contact"><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-register">
+        <div class="tab-content">
+            <div id="listar" class="tab-pane active"></div>
+        </div>
+        <div class="container-register">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Novo Livro</h1>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="titulo">Título do Livro</label>
+                            <input
+                                type="text"
+                                placeholder="digite o título do livro"
+                                id="titulo"
+                                name="titulo"
+                                class="form-control"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="autor">Autor do Livro</label>
+                            <input
+                                type="text"
+                                placeholder="digite o autor do livro"
+                                id="autor"
+                                name="autor"
+                                class="form-control"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="totalDePaginas">Numero de Páginas</label>
+                            <input
+                                type="number"
+                                min="0"
+                                placeholder="digite o numero de paginas"
+                                id="totalDePaginas"
+                                name="totalDePaginas"
+                                class="form-control"
+                            >
+                        </div>
+                        <button class="btn-form" onclick="cadastrar()" type="button">Cadastrar Livro</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container-register">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1>Atualizar página</h1>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="titulo">Título do Livro</label>
+                            <input
+                                type="text"
+                                placeholder="digite o título do livro"
+                                id="titulo2"
+                                name="titulo2"
+                                class="form-control"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="paginasLidas">Pagina atual</label>
+                            <input
+                                type="text"
+                                placeholder="digite o autor do livro"
+                                id="paginasLidas"
+                                name="paginasLidas"
+                                class="form-control"
+                            >
+                        </div>
+                        <button class="btn-form" onclick="update()" type="button">Atualizar Livro</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2022 Filipe Library. All Rights Reserved, Filipe Library from Unifavip</p>        
+    </footer>
+
+    <script src="../scripts/register-books.js"></script>
+    <script src="../scripts/navbar.js"></script>
+</body>
+</html>
